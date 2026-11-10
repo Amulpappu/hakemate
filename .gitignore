@@ -1,0 +1,51 @@
+# ---- Hakemate: only website code goes to GitHub ----
+
+# dependencies and builds
+node_modules/
+dist/
+build/
+.vite/
+*.log
+
+# secrets: env files (keep the safe example)
+.env
+.env.*
+!.env.example
+
+# secrets: Google OAuth / service-account JSON downloads and key files
+client_secret*.json
+*service-account*.json
+*credentials*.json
+*-key.json
+*.pem
+*.key
+*.p12
+secrets/
+
+# Supabase local state
+supabase/.temp/
+supabase/.branches/
+supabase/.env
+
+# documents, slides and media (PPT, PDF, letters, screenshots)
+*.ppt
+*.pptx
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.zip
+*.rar
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.mov
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
